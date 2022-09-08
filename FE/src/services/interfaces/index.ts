@@ -19,6 +19,7 @@ export interface Action {
       amount?: string,
       msg?: string,
       auction_id?: number,
+      connection_data?: string
     };
   }[];
 }

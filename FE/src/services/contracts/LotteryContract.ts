@@ -113,7 +113,10 @@ export default class LotteryContract {
       receiverId: this.contractId,
       functionCalls: [{
         methodName: AuctionContractMethod.claimNFT,
-        args: { auction_id: auctionId },
+        args: {
+          auction_id: auctionId,
+          connection_data: ' ',
+        },
         amount: ONE_YOCTO_NEAR,
       }],
     }];
